@@ -1,0 +1,2240 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://localhost/chaldeanchurch/admin/ledger.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Chaldean Syrian</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="./Chaldean Syrian_files/all.min.css" rel="stylesheet" type="text/css">
+    <link href="./Chaldean Syrian_files/css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Chaldean Syrian_files/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="./Chaldean Syrian_files/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <style>
+        /* .form-control,
+        .form-control:focus,
+        .form-control:focus:active {
+            /* background-color: #ebeef7 !important;
+            border-color: #96d3ec; */
+
+        } */
+    </style>
+</head>
+
+<body id="page-top" data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+<!-- Sidebar - Brand -->
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="http://localhost/chaldeanchurch/admin/index.html">
+    <div class="sidebar-brand-icon rotate-n-15">
+        <!-- <i class="fas fa-laugh-wink"></i> -->
+    </div>
+    <div class="sidebar-brand-text mx-3">ADMIN</div>
+</a>
+
+<!-- Divider -->
+<hr class="sidebar-divider my-0">
+
+<!-- Nav Item - Dashboard -->
+<li class="nav-item active">
+    <a class="nav-link" href="http://localhost/chaldeanchurch/admin/index.php">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Dashboard</span></a>
+</li>
+<!-- Divider -->
+<hr class="sidebar-divider">
+
+<!-- Heading -->
+<div class="sidebar-heading">
+    Entries
+</div>
+<!-- Nav Item  -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="http://localhost/chaldeanchurch/admin/Ledger.php" aria-expanded="true" aria-controls="collapseTwo" data-toggle="collapse" data-target="#collapseThree">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Accounts</span>
+    </a>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Sections</h6>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/ledger.php">Ledger</a>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/subledger.php">Sub Ledger</a>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/transaction.php">Transaction</a>
+        </div>
+    </div>
+</li>
+<!-- Divider -->
+<hr class="sidebar-divider">
+
+<!-- Heading -->
+<div class="sidebar-heading">
+    Interface
+</div>
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Components</span>
+    </a>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Components:</h6>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/buttons.html">Buttons</a>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/cards.html">Cards</a>
+        </div>
+    </div>
+</li>
+
+<!-- Nav Item - Utilities Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+        <i class="fas fa-fw fa-wrench"></i>
+        <span>Utilities</span>
+    </a>
+    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Utilities:</h6>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/utilities-color.html">Colors</a>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/utilities-border.html">Borders</a>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/utilities-animation.html">Animations</a>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/utilities-other.html">Other</a>
+        </div>
+    </div>
+</li>
+
+<!-- Divider -->
+<hr class="sidebar-divider">
+
+<!-- Heading -->
+<div class="sidebar-heading">
+    Addons
+</div>
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Pages</span>
+    </a>
+    <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Login Screens:</h6>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/login.html">Login</a>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/register.html">Register</a>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/forgot-password.html">Forgot Password</a>
+            <div class="collapse-divider"></div>
+            <h6 class="collapse-header">Other Pages:</h6>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/404.html">404 Page</a>
+            <a class="collapse-item" href="http://localhost/chaldeanchurch/admin/blank.html">Blank Page</a>
+        </div>
+    </div>
+</li>
+
+<!-- Nav Item - Charts -->
+<li class="nav-item">
+    <a class="nav-link" href="http://localhost/chaldeanchurch/admin/charts.html">
+        <i class="fas fa-fw fa-chart-area"></i>
+        <span>Charts</span></a>
+</li>
+
+<!-- Nav Item - Tables -->
+<li class="nav-item">
+    <a class="nav-link" href="http://localhost/chaldeanchurch/tables.html">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Tables</span></a>
+</li>
+
+<!-- Divider -->
+<hr class="sidebar-divider d-none d-md-block">
+
+<!-- Sidebar Toggler (Sidebar) -->
+<div class="text-center d-none d-md-inline">
+    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+</div>
+
+<!-- Sidebar Message -->
+<!-- <div class="sidebar-card">
+    <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="">
+    <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
+    <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
+</div> -->
+
+</ul>
+<!-- End of Sidebar -->
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+        <!-- Sidebar Toggle (Topbar) -->
+        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <!-- Topbar Search -->
+        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+                <!-- <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                    aria-label="Search" aria-describedby="basic-addon2"> -->
+                <div class="input-group-append">
+                    <!-- <button class="btn btn-secondary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                    </button> -->
+                </div>
+            </div>
+        </form>
+
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+                <a class="nav-link dropdown-toggle" href="http://localhost/chaldeanchurch/admin/ledger.php#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                    <form class="form-inline mr-auto w-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="http://localhost/chaldeanchurch/admin/ledger.php#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- <i class="fas fa-bell fa-fw"></i> -->
+                    <!-- Counter - Alerts -->
+                    <!-- <span class="badge badge-danger badge-counter">3+</span> -->
+                </a>
+                <!-- Dropdown - Alerts -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                    <h6 class="dropdown-header">
+                        Alerts Center
+                    </h6>
+                    <a class="dropdown-item d-flex align-items-center" href="http://localhost/chaldeanchurch/admin/ledger.php#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-secondary">
+                                <i class="fas fa-file-alt text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 12, 2019</div>
+                            <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="http://localhost/chaldeanchurch/admin/ledger.php#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-success">
+                                <i class="fas fa-donate text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 7, 2019</div>
+                            $290.29 has been deposited into your account!
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="http://localhost/chaldeanchurch/admin/ledger.php#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-warning">
+                                <i class="fas fa-exclamation-triangle text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 2, 2019</div>
+                            Spending Alert: We've noticed unusually high spending for your account.
+                        </div>
+                    </a>
+                    <a class="dropdown-item text-center small text-gray-500" href="http://localhost/chaldeanchurch/admin/ledger.php#">Show All Alerts</a>
+                </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="http://localhost/chaldeanchurch/admin/ledger.php#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- <i class="fas fa-envelope fa-fw"></i> -->
+                    <!-- Counter - Messages -->
+                    <!-- <span class="badge badge-danger badge-counter">7</span> -->
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                    <h6 class="dropdown-header">
+                        Message Center
+                    </h6>
+                    <a class="dropdown-item d-flex align-items-center" href="http://localhost/chaldeanchurch/admin/ledger.php#">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="./Chaldean Syrian_files/undraw_profile_1.svg" alt="">
+                            <div class="status-indicator bg-success"></div>
+                        </div>
+                        <div class="font-weight-bold">
+                            <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                problem I've been having.</div>
+                            <div class="small text-gray-500">Emily Fowler · 58m</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="http://localhost/chaldeanchurch/admin/ledger.php#">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="./Chaldean Syrian_files/undraw_profile_2.svg" alt="">
+                            <div class="status-indicator"></div>
+                        </div>
+                        <div>
+                            <div class="text-truncate">I have the photos that you ordered last month, how
+                                would you like them sent to you?</div>
+                            <div class="small text-gray-500">Jae Chun · 1d</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="http://localhost/chaldeanchurch/admin/ledger.php#">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="./Chaldean Syrian_files/undraw_profile_3.svg" alt="">
+                            <div class="status-indicator bg-warning"></div>
+                        </div>
+                        <div>
+                            <div class="text-truncate">Last month's report looks great, I am very happy with
+                                the progress so far, keep up the good work!</div>
+                            <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="http://localhost/chaldeanchurch/admin/ledger.php#">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="./Chaldean Syrian_files/60x60" alt="">
+                            <div class="status-indicator bg-success"></div>
+                        </div>
+                        <div>
+                            <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                told me that people say this to all dogs, even if they aren't good...</div>
+                            <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item text-center small text-gray-500" href="http://localhost/chaldeanchurch/admin/ledger.php#">Read More Messages</a>
+                </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="http://localhost/chaldeanchurch/admin/ledger.php#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">ADMIN</span>
+                    <img class="img-profile rounded-circle" src="./Chaldean Syrian_files/undraw_profile.svg">
+                </a>
+                <!-- Dropdown - User Information -->
+                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="http://localhost/chaldeanchurch/admin/ledger.php#">
+                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Profile
+                    </a>
+                    <a class="dropdown-item" href="http://localhost/chaldeanchurch/admin/ledger.php#">
+                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Settings
+                    </a>
+                    <a class="dropdown-item" href="http://localhost/chaldeanchurch/admin/ledger.php#">
+                        <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Activity Log
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="modal" data-target="#logoutModal">
+                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Logout
+                    </a>
+                </div>
+            </li>
+
+        </ul>
+
+    </nav>
+    <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <!-- <h1 class="h3 mb-0 text-gray-800">Dashboard</h1> -->
+
+
+                <div>
+                    <a href="http://localhost/chaldeanchurch/admin/pdfReport/ledgerPDF.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Print </a>
+                    <a href="http://localhost/chaldeanchurch/admin/excelReport/ledgerExcel.php" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Export as Excel </a>
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <!-- DataTales Example -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Ledger</h6>
+                </div>
+
+                <div class="card-body">
+                    <form method="POST" action="http://localhost/chaldeanchurch/admin/ledger.php#" class="form-inline">
+
+                        <div class="d-sm-flex align-items-center justify-content-between mb-6 ml-4 mr-4">
+                            <input type="number" name="code" id="code" placeholder="Code" class="form-control col-sm-8 ml-3" required="">
+                            <input type="text" name="ledger_name" id="ledger_name" placeholder="Ledger Name" class="form-control  col-sm-8 ml-3" required="">
+                            <input type="submit" value="Add" name="submit" class=" btn btn-secondary btn-block  col-sm-8 ml-3">
+                        </div>
+                    </form>
+                    <div class="table-responsive">
+
+                        <div class="modal fade" id="editLedgerModel5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="26" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="5">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="cash">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel26" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=26" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="51" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="11">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Salary and Allowance">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel51" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=51" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="7" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="12">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Gratuity paid">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=7" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="14" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="13">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Clergy purse">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=14" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="25" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="14">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Development Exp.">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel25" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=25" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="17" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="15">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Priest Ordination Exp.">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=17" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="18" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="16">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Metropolitan Palace Exp.">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=18" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="19" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="17">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Festival Expence">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=19" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="20" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="18">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="School Annual Maintenance Exp.">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=20" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="27" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="19">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Parish Loan">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel27" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=27" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="28" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="20">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Printing and Stationary">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel28" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=28" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="29" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="21">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Current charges">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel29" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=29" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="30" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="22">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Charity">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel30" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=30" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel23" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="31" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="23">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Water Charges">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel31" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=31" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="32" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="24">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Postage and Telegrams">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel32" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=32" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel25" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="33" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="25">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Telephone Charges">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel33" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=33" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel26" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="34" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="26">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Hundi/Donation">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel34" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=34" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel27" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="35" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="27">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Annual Subscription">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel35" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=35" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel28" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="36" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="28">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Repairs and Maintenance">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel36" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=36" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel29" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="37" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="29">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Tomb church income &amp; expense">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel37" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=37" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel30" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="38" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="30">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Birthday Certificate">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel38" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=38" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel31" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="39" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="31">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Travelling &amp; Transporting Exp.">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel39" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=39" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel32" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="40" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="32">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Bank Charges">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel40" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=40" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel33" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="41" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="33">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Insurance">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel41" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=41" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel34" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="42" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="34">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Meeting Exp.">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel42" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=42" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel35" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="43" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="35">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Priests contigencies &amp; Medical Aid">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel43" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=43" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel36" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="44" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="36">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Subha yogam Exp.">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel44" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=44" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel37" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="45" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="37">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Youth Association Exp.">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel45" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=45" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel38" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="46" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="38">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Audit Fees">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel46" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=46" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel39" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="47" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="39">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Sale of Wax">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel47" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=47" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel40" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="48" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="40">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Election">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel48" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=48" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="editLedgerModel41" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit Ledger</h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" class="user"></form>
+                                                            <input type="text" name="ledger_id" id="ledger_id" class="form-control mb-3 mb-sm-1" value="50" readonly="">
+
+                                                            <input type="number" name="code1" id="code1" class="form-control mb-3 mb-sm-1" value="41">
+                                                            <input type="text" name="ledger_name1" id="ledger_name1" class="form-control mb-3 mb-sm-1 " value="Suvishesha Pravarthanam">
+
+                                                            <input type="submit" class="btn btn-secondary " value="Update" name="update">
+
+                                                        
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="modal fade" id="deleteLedgerModel50" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure to want to delete this ledger?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-danger" type="button" href="http://localhost/chaldeanchurch/admin/ledger.php?id=50" name="delete">Delete</a>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="dataTable_length"><label>Show <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="dataTable_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-bordered table-hover dataTable no-footer" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                            <thead>
+                                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Sl.No: activate to sort column descending" style="width: 191px;">Sl.No</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Code: activate to sort column ascending" style="width: 183px;">Code</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 716px;">Name</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Manage: activate to sort column ascending" style="width: 327px;">Manage</th></tr>
+                            </thead>
+                            <tfoot>
+
+                            </tfoot>
+                            <tbody>
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                
+                                        
+                                        
+                                        <!-- Edit Modal-->
+                                        
+                                        <!-- Delete Modal-->
+                                        
+                                                            <tr role="row" class="odd">
+                                        <td class="sorting_1">1</td>
+                                        <td>5</td>
+                                        <td>cash</td>
+                                        <td>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="modal" data-target="#editLedgerModel5" data-code="5" data-name="cash" class="btn btn-warning btn-sm text-light mb-3 mb-sm-1">
+                                        Edit</a>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" class="btn btn-danger btn-sm text-light mb-sm-1" data-toggle="modal" data-target="#deleteLedgerModel26">Delete</a>
+                                        </td>
+                                       
+                                    </tr><tr role="row" class="even">
+                                        <td class="sorting_1">2</td>
+                                        <td>11</td>
+                                        <td>Salary and Allowance</td>
+                                        <td>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="modal" data-target="#editLedgerModel11" data-code="11" data-name="Salary" and="" allowance="" class="btn btn-warning btn-sm text-light mb-3 mb-sm-1">
+                                        Edit</a>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" class="btn btn-danger btn-sm text-light mb-sm-1" data-toggle="modal" data-target="#deleteLedgerModel51">Delete</a>
+                                        </td>
+                                       
+                                    </tr><tr role="row" class="odd">
+                                        <td class="sorting_1">3</td>
+                                        <td>12</td>
+                                        <td>Gratuity paid</td>
+                                        <td>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="modal" data-target="#editLedgerModel12" data-code="12" data-name="Gratuity" paid="" class="btn btn-warning btn-sm text-light mb-3 mb-sm-1">
+                                        Edit</a>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" class="btn btn-danger btn-sm text-light mb-sm-1" data-toggle="modal" data-target="#deleteLedgerModel7">Delete</a>
+                                        </td>
+                                       
+                                    </tr><tr role="row" class="even">
+                                        <td class="sorting_1">4</td>
+                                        <td>13</td>
+                                        <td>Clergy purse</td>
+                                        <td>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="modal" data-target="#editLedgerModel13" data-code="13" data-name="Clergy" purse="" class="btn btn-warning btn-sm text-light mb-3 mb-sm-1">
+                                        Edit</a>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" class="btn btn-danger btn-sm text-light mb-sm-1" data-toggle="modal" data-target="#deleteLedgerModel14">Delete</a>
+                                        </td>
+                                       
+                                    </tr><tr role="row" class="odd">
+                                        <td class="sorting_1">5</td>
+                                        <td>14</td>
+                                        <td>Development Exp.</td>
+                                        <td>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="modal" data-target="#editLedgerModel14" data-code="14" data-name="Development" exp.="" class="btn btn-warning btn-sm text-light mb-3 mb-sm-1">
+                                        Edit</a>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" class="btn btn-danger btn-sm text-light mb-sm-1" data-toggle="modal" data-target="#deleteLedgerModel25">Delete</a>
+                                        </td>
+                                       
+                                    </tr><tr role="row" class="even">
+                                        <td class="sorting_1">6</td>
+                                        <td>15</td>
+                                        <td>Priest Ordination Exp.</td>
+                                        <td>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="modal" data-target="#editLedgerModel15" data-code="15" data-name="Priest" ordination="" exp.="" class="btn btn-warning btn-sm text-light mb-3 mb-sm-1">
+                                        Edit</a>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" class="btn btn-danger btn-sm text-light mb-sm-1" data-toggle="modal" data-target="#deleteLedgerModel17">Delete</a>
+                                        </td>
+                                       
+                                    </tr><tr role="row" class="odd">
+                                        <td class="sorting_1">7</td>
+                                        <td>16</td>
+                                        <td>Metropolitan Palace Exp.</td>
+                                        <td>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="modal" data-target="#editLedgerModel16" data-code="16" data-name="Metropolitan" palace="" exp.="" class="btn btn-warning btn-sm text-light mb-3 mb-sm-1">
+                                        Edit</a>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" class="btn btn-danger btn-sm text-light mb-sm-1" data-toggle="modal" data-target="#deleteLedgerModel18">Delete</a>
+                                        </td>
+                                       
+                                    </tr><tr role="row" class="even">
+                                        <td class="sorting_1">8</td>
+                                        <td>17</td>
+                                        <td>Festival Expence</td>
+                                        <td>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="modal" data-target="#editLedgerModel17" data-code="17" data-name="Festival" expence="" class="btn btn-warning btn-sm text-light mb-3 mb-sm-1">
+                                        Edit</a>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" class="btn btn-danger btn-sm text-light mb-sm-1" data-toggle="modal" data-target="#deleteLedgerModel19">Delete</a>
+                                        </td>
+                                       
+                                    </tr><tr role="row" class="odd">
+                                        <td class="sorting_1">9</td>
+                                        <td>18</td>
+                                        <td>School Annual Maintenance Exp.</td>
+                                        <td>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="modal" data-target="#editLedgerModel18" data-code="18" data-name="School" annual="" maintenance="" exp.="" class="btn btn-warning btn-sm text-light mb-3 mb-sm-1">
+                                        Edit</a>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" class="btn btn-danger btn-sm text-light mb-sm-1" data-toggle="modal" data-target="#deleteLedgerModel20">Delete</a>
+                                        </td>
+                                       
+                                    </tr><tr role="row" class="even">
+                                        <td class="sorting_1">10</td>
+                                        <td>19</td>
+                                        <td>Parish Loan</td>
+                                        <td>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" data-toggle="modal" data-target="#editLedgerModel19" data-code="19" data-name="Parish" loan="" class="btn btn-warning btn-sm text-light mb-3 mb-sm-1">
+                                        Edit</a>
+                                        <a href="http://localhost/chaldeanchurch/admin/ledger.php#" class="btn btn-danger btn-sm text-light mb-sm-1" data-toggle="modal" data-target="#deleteLedgerModel27">Delete</a>
+                                        </td>
+                                       
+                                    </tr></tbody>
+
+                        </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 32 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="dataTable_previous"><a href="http://localhost/chaldeanchurch/admin/ledger.php#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="http://localhost/chaldeanchurch/admin/ledger.php#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="http://localhost/chaldeanchurch/admin/ledger.php#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="http://localhost/chaldeanchurch/admin/ledger.php#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="http://localhost/chaldeanchurch/admin/ledger.php#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item next" id="dataTable_next"><a href="http://localhost/chaldeanchurch/admin/ledger.php#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright © Your Website 2020</span>
+                    </div>
+                </div>
+            </footer>    <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="http://localhost/chaldeanchurch/admin/ledger.php#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="./Chaldean Syrian_files/jquery.min.js.download"></script>
+    <script src="./Chaldean Syrian_files/bootstrap.bundle.min.js.download"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="./Chaldean Syrian_files/jquery.easing.min.js.download"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="./Chaldean Syrian_files/sb-admin-2.min.js.download"></script>
+
+    <!-- Page level plugins -->
+    <script src="./Chaldean Syrian_files/jquery.dataTables.min.js.download"></script>
+    <script src="./Chaldean Syrian_files/dataTables.bootstrap4.min.js.download"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="./Chaldean Syrian_files/datatables-demo.js.download"></script>
+
+
+
+</body></html>
